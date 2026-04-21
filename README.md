@@ -1,2 +1,61 @@
 # driver-distraction-detection-cnn-resnet
 A study on driver distraction detection using deep learning, comparing CNN and ResNet50 models with transfer learning.
+---
+## Models Used
+- **Convolutional Neural Network (CNN)** – baseline model  
+- **ResNet50 (Frozen)** – transfer learning without fine-tuning  
+- **ResNet50 (Fine-Tuned)** – transfer learning with fine-tuning
+---
+## Dataset
+- **Name** Distracted Driver Detection Computer Vision Dataset
+- **Source:** Roboflow
+- **Link**: https://universe.roboflow.com/sample-fqpfe/distracted-driver-kk1pl
+- **Description:** The dataset contains images of drivers performing various activities such as safe driving, texting, talking on the phone, drinking, and interacting with passengers.
+### Dataset Details
+- **Total Classes:** 10  
+- **Training Samples:** 1875 images  
+- **Validation Samples:** 201 images  
+- **Test Samples:** 112 images
+
+### Classes:
+- drinking  
+- hair and makeup  
+- operating the radio  
+- reaching behind  
+- safe driving  
+- talking on the phone (left)  
+- talking on the phone (right)  
+- talking to passenger  
+- texting (left)  
+- texting (right)
+- The dataset shows slight class imbalance across categories.
+
+---
+## Preprocessing
+- Images resized to **224 × 224 pixels**  
+- Pixel normalization applied  
+- Dataset organized into training, validation, and test sets  
+
+---
+
+## Results
+- The **CNN model achieved the highest accuracy (87.5%)**  
+- The **ResNet50 (Frozen)** model achieved **73% accuracy**  
+- The **ResNet50 (Fine-Tuned)** model improved performance to **82% accuracy**  
+- Fine-tuning improved performance, but the baseline CNN performed best on this dataset  
+- Misclassification occurred between visually similar classes such as texting and talking on the phone  
+
+---
+
+##  How to Run
+
+### 1. Install dependencies
+pip install tensorflow numpy matplotlib seaborn scikit-learn pandas
+
+### Requirments
+-tensorflow
+-numpy
+-pandas
+-matplotlib
+-seaborn
+-scikit-learn
