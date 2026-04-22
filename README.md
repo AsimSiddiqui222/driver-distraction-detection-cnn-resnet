@@ -43,8 +43,14 @@ A study on driver distraction detection using deep learning, comparing CNN and R
 - The **ResNet50 (Frozen)** model achieved **73% accuracy**  
 - The **ResNet50 (Fine-Tuned)** model improved performance to **82% accuracy**  
 - Fine-tuning improved performance, but the baseline CNN performed best on this dataset  
-- Misclassification occurred between visually similar classes such as texting and talking on the phone  
+- Misclassification occurred between visually similar classes such as texting and talking on the phone
+  
 
+---
+## Live Demo 
+A real-time driver distraction detection demo is included using OpenCV.
+### Run The Demo
+live_demo.py
 ---
 
 ##  How to Run
