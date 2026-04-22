@@ -39,7 +39,7 @@ A study on driver distraction detection using deep learning, comparing CNN and R
 ---
 
 ## Results
-- The **CNN model achieved the highest accuracy (87.5%)**  
+- The **CNN model achieved the highest accuracy (85.7%)**  
 - The **ResNet50 (Frozen)** model achieved **73% accuracy**  
 - The **ResNet50 (Fine-Tuned)** model improved performance to **82% accuracy**  
 - Fine-tuning improved performance, but the baseline CNN performed best on this dataset  
