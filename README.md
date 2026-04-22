@@ -48,15 +48,16 @@ A study on driver distraction detection using deep learning, comparing CNN and R
 
 ---
 ## Live Demo 
-A real-time driver distraction detection demo is included using OpenCV.
-### Run The Demo
-live_demo.py
+- A real-time driver distraction detection demo is included using OpenCV.
+- Run The Demo using live_demo.py, change cap = cv2.VideoCapture(0) to cap = cv2.VideoCapture(1) to run an external Camera
+- the demo has 3 models, press 1 for CNN, press 2 for ResNet50 (Frozen), press 3 for ResNet50 (Fine-Tuned) 
+- live_demo.py
 ---
 
 ##  How to Run
 
 ### 1. Install dependencies
-pip install tensorflow numpy matplotlib seaborn scikit-learn pandas
+pip install tensorflow numpy matplotlib seaborn scikit-learn pandas opencv-python
 
 ### Requirments
 -tensorflow
@@ -65,3 +66,4 @@ pip install tensorflow numpy matplotlib seaborn scikit-learn pandas
 -matplotlib
 -seaborn
 -scikit-learn
+-OpenCV-Python
